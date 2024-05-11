@@ -12,7 +12,7 @@ COPY requirements.txt .
 
 RUN python -m venv venv
 
-RUN /bin/bash -c "opt-env\Scripts\activate.bat"
+RUN /bin/bash -c "source venv/bin/activate"
 
 # Instalar las dependencias
 RUN pip install -r requirements.txt
